@@ -1,4 +1,4 @@
-console.log("Hello Todo App!");
+// console.log("Hello Todo App!");
 
 let todos = [];
 const deleteTodosButton = document.querySelector("#delete-todos");
