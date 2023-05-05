@@ -136,11 +136,11 @@ export function initTodoApp() {
 
 // Outsourced Funktions
 
-function emptyToDoText(todoText) {
+export function emptyToDoText(todoText) {
   return todoText.length === 0;
 }
 
-function isDuplicate(newTodo, todos) {
+export function isDuplicate(newTodo, todos) {
   newTodo = newTodo.toLowerCase();
   for (let i = 0; i < todos.length; i++) {
     const currentTodo = todos[i];
@@ -151,18 +151,18 @@ function isDuplicate(newTodo, todos) {
   return false;
 }
 
-function isTodoDone(todo) {
+export function isTodoDone(todo) {
   return todo === true;
 }
 
-function isFilterAll(filterValue) {
+export function isFilterAll(filterValue) {
   return filterValue === "all";
 }
 
-function isFilterOpen(filterValue) {
+export function isFilterOpen(filterValue) {
   return filterValue === "open";
 }
 
-function isFilterDone(filterValue) {
+export function isFilterDone(filterValue) {
   return filterValue === "done";
 }
