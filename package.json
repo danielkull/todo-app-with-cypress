@@ -4,7 +4,7 @@
   "description": "Minimal todo app example.",
   "scripts": {
     "serve": "serve ./src",
-    "e2e": "cypress open",
+    "e2e": "cypress run",
     "test": "jest"
   },
   "keywords": [],
