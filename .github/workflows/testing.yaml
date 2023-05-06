@@ -26,9 +26,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       # Run the command to install node deps
       - run: npm ci
-      # Run the command to start your dev server followed by the & sign
-      - run: npm run devserver &
-      # Run the command for the e2e tests
-      - run: npm run e2e:ci
-      # Run the command for the unit tests
-      - run: npm run e2e:ci
+      # Run jest
+      - run: npm run test
